@@ -17,5 +17,22 @@ public class Main {
         double myDouble = myInt;
         System.out.println(myInt);
         System.out.println(myDouble);
+        double balance = 1500.50;
+        double withDrawalAmount = 1400.50;
+//        double availableBalance = balance;
+        if (withDrawalAmount > balance){
+            System.out.println("Insufficient funds");
+        } else if (withDrawalAmount<0 || withDrawalAmount > 10000){
+            System.out.println("Invalid amount or exceeds daily limit.");
+        }
+        else if (withDrawalAmount > 0 && balance >= withDrawalAmount) {
+            balance = balance - withDrawalAmount;
+            System.out.println("Withdrawal successful! Available balance: " + balance);
+        }
+        else {
+            System.out.println("Try Again Later");
+        }
+        System.out.println("Existing Balance: " + balance);
+
     }
 }
