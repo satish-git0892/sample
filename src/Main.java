@@ -33,6 +33,34 @@ public class Main {
             System.out.println("Try Again Later");
         }
         System.out.println("Existing Balance: " + balance);
+        for(int i=1;i<=10;i++){
+//            if (i==4) {
+//                System.out.println("final value:" + i);
+//            }
+//                else {
+//                System.out.println(i);
+//            }
+            System.out.println(i*7);
+
+            }
+
+        int table = 1;
+        while (table <= 10) {
+            System.out.println(7 + "x" + table + "=" + (7*table));
+            table++; // Crucial: change the condition or the loop runs forever!
+        }
+        int x = 10;
+        do {
+            System.out.println("This prints even though x is not < 5");
+            x++;
+        } while (x < 13);
+        //nested loops
+        for (int i = 1; i <= 10; i++) {       // Outer loop (Rows)
+            for (int j = 1; j <= 10; j++) {   // Inner loop (Columns)
+                System.out.print((i * j) + "\t");
+            }
+            System.out.println(); // Moves to the next line after each row
+        }
 
     }
 }
